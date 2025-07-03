@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ProRus — Главная</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f8ff;
+      color: #222;
+    }
+    header {
+      background: #A5DEFF;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3em;
+      color: #444;
+      margin: 10px 0;
+    }
+    header img.logo {
+      width: 200px;
+    }
+    nav {
+      background: #C3FBD8;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 0;
+    }
+    nav a {
+      text-decoration: none;
+      background: #D2BCF3;
+      color: #333;
+      font-weight: bold;
+      padding: 12px 20px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background: #be9ae3;
+    }
+    .intro {
+      background: #A5DEFF;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .intro h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    .intro p {
+      font-size: 1.2em;
+      color: #333;
+    }
+    .button-start {
+      margin-top: 20px;
+      background: #88e1b6;
+      color: #000;
+      font-size: 1.1em;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+    .levels {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 30px 0;
+    }
+    .level {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 180px;
+      margin: 10px;
+      text-align: center;
+    }
+    .level img {
+      width: 80px;
+      height: 80px;
+    }
+    .section {
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .teachers {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+    .teacher {
+      text-align: center;
+    }
+    .teacher img {
+      width: 100px;
+      border-radius: 50%;
+    }
+    footer {
+      background: #e3d7ff;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      color: #333;
+    }
+    @media (max-width: 600px) {
+      .levels, .teachers {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://dummyimage.com/300x80/ffffff/000000.png&text=ProRus" alt="ProRus логотип" class="logo"/>
+    <h1>Добро пожаловать в ProRus!</h1>
+  </header>
+
+  <nav>
+    <a href="#">Главная</a>
+    <a href="#">Темы</a>
+    <a href="#">Упражнения</a>
+    <a href="#">Тесты</a>
+    <a href="#">Слово дня</a>
+    <a href="#">О нас</a>
+  </nav>
+
+  <div class="intro">
+    <h2>Учите русский онлайн</h2>
+    <p>Курсы для всех уровней: A1, A2, B1. Грамматика, лексика и практика речи</p>
+    <button class="button-start">Начать обучение</button>
+  </div>
+
+  <div class="levels">
+    <div class="level">
+      <img src="https://cdn-icons-png.flaticon.com/512/4140/4140047.png" alt="A1">
+      <p>Русский — A1</p>
+    </div>
+    <div class="level">
+      <img src="https://cdn-icons-png.flaticon.com/512/4140/4140051.png" alt="A2">
+      <p>Русский — A2</p>
+    </div>
+    <div class="level">
+      <img src="https://cdn-icons-png.flaticon.com/512/4140/4140037.png" alt="B1">
+      <p>Русский — B1</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Преподаватели</h2>
+    <div class="teachers">
+      <div class="teacher">
+        <img src="https://cdn-icons-png.flaticon.com/512/4140/4140051.png" alt="Мафтуна">
+        <p>Мафтуна Бойназарова</p>
+      </div>
+      <div class="teacher">
+        <img src="https://cdn-icons-png.flaticon.com/512/4140/4140037.png" alt="Дильдора">
+        <p>Дильдора Каримова</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © ProRus, 2025 — Все права защищены
+  </footer>
+</body>
+</html>
