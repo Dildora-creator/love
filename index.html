@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ProRus — Учите русский онлайн</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #e5e0ff;
+      color: #222;
+    }
+    header {
+      background: #87f0e5;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5em;
+      color: #333;
+    }
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+      background: #cdb4f7;
+    }
+    .hero h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      color: #333;
+    }
+    .hero button {
+      margin-top: 20px;
+      padding: 14px 28px;
+      font-size: 1em;
+      background: #00d4ff;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .levels {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background: #e0f7e9;
+      padding: 40px 10px;
+    }
+    .level {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+      width: 200px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .level img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+    .level p {
+      margin-top: 10px;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+    .sections {
+      text-align: center;
+      background: #f0dfff;
+      padding: 30px 10px;
+    }
+    .sections h3 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+    .section-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .section-buttons button {
+      padding: 14px 24px;
+      border-radius: 30px;
+      background: #8ac6f2;
+      border: none;
+      font-weight: bold;
+      font-size: 1em;
+      cursor: pointer;
+      color: #fff;
+    }
+    .teachers {
+      background: #c3fbd8;
+      padding: 40px 10px;
+      text-align: center;
+    }
+    .teachers h3 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+    .teacher-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .teacher {
+      text-align: center;
+    }
+    .teacher img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+    .teacher p {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    footer {
+      background: #87f0e5;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+    @media (max-width: 600px) {
+      .level, .section-buttons button {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ProRus</h1>
+  </header>
+
+  <section class="hero">
+    <h2>Учите русский онлайн</h2>
+    <p>Курсы для A1, A2, B1. Грамматика, лексика и практика</p>
+    <button>Начать обучение</button>
+  </section>
+
+  <section class="levels">
+    <div class="level">
+      <img src="https://cdn-icons-png.flaticon.com/512/4140/4140047.png" alt="A1">
+      <p>Русский A1</p>
+    </div>
+    <div class="level">
+      <img src="https://cdn-icons-png.flaticon.com/512/4140/4140051.png" alt="A2">
+      <p>Русский A2</p>
+    </div>
+    <div class="level">
+      <img src="https://cdn-icons-png.flaticon.com/512/4140/4140037.png" alt="B1">
+      <p>Русский B1</p>
+    </div>
+  </section>
+
+  <section class="sections">
+    <h3>Разделы</h3>
+    <div class="section-buttons">
+      <button>Занятия</button>
+      <button>Тесты</button>
+      <button>Слово дня</button>
+    </div>
+  </section>
+
+  <section class="teachers">
+    <h3>Преподаватели</h3>
+    <div class="teacher-list">
+      <div class="teacher">
+        <img src="https://cdn-icons-png.flaticon.com/512/4140/4140037.png" alt="Дильдора">
+        <p>Дильдора Каримова</p>
+      </div>
+      <div class="teacher">
+        <img src="https://cdn-icons-png.flaticon.com/512/4140/4140051.png" alt="Мафтуна">
+        <p>Мафтуна Бойназарова</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © ProRus 2025. Все права защищены.
+  </footer>
+</body>
+</html>
